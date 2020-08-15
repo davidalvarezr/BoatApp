@@ -11,9 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08c6548e-aab1-4039-a337-429688ca434f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/06f5afd3-fe34-4e61-800c-148d83a2f882.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/06f5afd3-fe34-4e61-800c-148d83a2f882.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +192,7 @@
       <updated>1597353596006</updated>
       <workItem from="1597353597079" duration="157000" />
       <workItem from="1597353764950" duration="7174000" />
-      <workItem from="1597486691933" duration="4499000" />
+      <workItem from="1597486691933" duration="12866000" />
     </task>
     <task id="LOCAL-00001" summary="app init">
       <created>1597363027366</created>
@@ -196,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597363027366</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Seeder main user">
+      <created>1597493725211</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597493725211</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,13 +228,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="app init" />
-    <option name="LAST_COMMIT_MESSAGE" value="app init" />
+    <MESSAGE value="Seeder main user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seeder main user" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1504" y="341" key="#Plugins" timestamp="1597353754009">
+    <state x="1504" y="341" key="#Plugins" timestamp="1597499414320">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1504" y="341" key="#Plugins/0.0.2560.1400@0.0.2560.1400" timestamp="1597353754009" />
+    <state x="1504" y="341" key="#Plugins/0.0.2560.1400@0.0.2560.1400" timestamp="1597499414320" />
     <state x="198" y="541" width="957" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597490286366">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -231,21 +244,29 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="370" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597493131560" />
-    <state x="502" y="436" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1597358471368">
+    <state x="502" y="436" width="316" height="241" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1597503816256">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="502" y="436" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2560.1400@0.0.2560.1400" timestamp="1597358471368" />
-    <state x="347" y="436" width="585" height="534" key="find.popup" timestamp="1597492087260">
+    <state x="502" y="436" width="316" height="241" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2560.1400@0.0.2560.1400" timestamp="1597503816256" />
+    <state x="491" y="476" width="409" height="454" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1597498888745">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="347" y="436" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597492087260" />
-    <state x="1568" y="332" width="672" height="677" key="run.anything.popup" timestamp="1597353731629">
+    <state x="491" y="476" width="409" height="454" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597498888745" />
+    <state x="457" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597494498259">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1568" y="332" width="672" height="677" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597353731629" />
-    <state x="1575" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1597492078338">
+    <state x="457" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597494498259" />
+    <state x="347" y="436" width="585" height="534" key="find.popup" timestamp="1597502015377">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1575" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597492078338" />
+    <state x="347" y="436" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597502015377" />
+    <state x="1568" y="332" width="672" height="677" key="run.anything.popup" timestamp="1597499355253">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1568" y="332" width="672" height="677" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597499355253" />
+    <state x="1575" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1597502676425">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1575" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597502676425" />
   </component>
 </project>
