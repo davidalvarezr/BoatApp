@@ -1,0 +1,3 @@
+mysql -u root -proot boatapp "CREATE DATABASE IF NOT EXISTS `boatapp_test` COLLATE 'utf8_general_ci' ;"
+mysql -u root -proot boatapp_test "GRANT ALL ON `captain`.* TO 'default'@'%' ;"
+mysql -u root -proot boatapp_test "FLUSH PRIVILEGES ;"
