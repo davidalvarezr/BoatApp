@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateBoatsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('boats', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+
+            $table->string('name', 127);
+            $table->string('description', 511);
+            $table->unique(['name', 'description']);
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('boats', function (Blueprint $table) {
+            $table->dropUnique(['name', 'description']);
+        });
+        Schema::dropIfExists('boats');
+    }
+}
