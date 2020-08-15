@@ -12,7 +12,7 @@ class Boat extends Model
         'name', 'description'
     ];
 
-    public static $createRules = [
+    public static $storeRules = [
         'name' => ['required', 'string', 'max:127'],
         'description' => ['required', 'string', 'max:511'],
     ];

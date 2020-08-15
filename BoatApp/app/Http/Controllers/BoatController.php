@@ -2,16 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreBoatRequest;
+use App\Models\Boat;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class BoatController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
 
     // VIEW ------------------------------------------------------------------------------------------------------------
+
+    public function list()
+    {
+        return view('modules.boat.list', ['token' => Session::get('token')]);
+    }
 
     public function create()
     {
@@ -39,9 +43,11 @@ class BoatController extends Controller
     // API -------------------------------------------------------------------------------------------------------------
 
     // TODO
-    public function store()
+    public function store(StoreBoatRequest $r)
     {
-
+        $data = $r->validated();
+        $boat = Boat::create($data);
+        return response()->json(['boat' => $boat]);
     }
 
     // TODO

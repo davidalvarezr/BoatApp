@@ -71,9 +71,6 @@
     </head>
     <body>
     <div id="app">
-        <passport-clients></passport-clients>
-        <passport-authorized-clients></passport-authorized-clients>
-        <passport-personal-access-tokens></passport-personal-access-tokens>
                 <div class="flex-center position-ref full-height">
                     @if (Route::has('login'))
                         <div class="top-right links">

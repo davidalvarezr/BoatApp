@@ -23,6 +23,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 // Boat
+Route::get('/boat/list', 'BoatController@list')->name('boat-list');
 Route::get('/boat', 'BoatController@create')->name('boat-create');
 Route::get('/boat/{id}', 'BoatController@show')->name('boat-show');
 Route::get('/boat/{id}/edit', 'BoatController@edit')->name('boat-edit');

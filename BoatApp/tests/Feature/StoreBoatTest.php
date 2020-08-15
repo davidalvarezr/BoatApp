@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+
 use App\Models\Boat;
 use Tests\BaseTestCase;
 
@@ -18,8 +19,10 @@ class StoreBoatTest extends BaseTestCase
 
         $boatCount = Boat::all()->count();
 
-        $response = $this->actingAs($this->authenticatedUser())
-            ->post(route('api-boat-store'), $boat->toArray());
+        $response = $this->actingAs($this->authenticatedUser(), 'api')
+        ->postApiWithAuth(route('api-boat-store'), $boat->toArray());
+
+        $response->dump();
 
         $response->assertOk();
         $response->assertJson(['boat' => [
@@ -27,7 +30,5 @@ class StoreBoatTest extends BaseTestCase
             'description' => $boat->description,
         ]]);
         $this->assertTrue(Boat::all()->count() === $boatCount + 1);
-
-
     }
 }
