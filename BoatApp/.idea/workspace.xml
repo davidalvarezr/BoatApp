@@ -11,8 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08c6548e-aab1-4039-a337-429688ca434f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../laradock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,8 +192,17 @@
       <option name="presentableId" value="Default" />
       <updated>1597353596006</updated>
       <workItem from="1597353597079" duration="157000" />
-      <workItem from="1597353764950" duration="4656000" />
+      <workItem from="1597353764950" duration="7174000" />
+      <workItem from="1597486691933" duration="3377000" />
     </task>
+    <task id="LOCAL-00001" summary="app init">
+      <created>1597363027366</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597363027366</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,26 +220,34 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="app init" />
+    <option name="LAST_COMMIT_MESSAGE" value="app init" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="1504" y="341" key="#Plugins" timestamp="1597353754009">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1504" y="341" key="#Plugins/0.0.2560.1400@0.0.2560.1400" timestamp="1597353754009" />
-    <state x="198" y="541" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597355634762">
+    <state x="198" y="541" width="957" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597490286366">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="198" y="541" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597355634762" />
+    <state x="198" y="541" width="957" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597490286366" />
     <state x="502" y="436" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1597358471368">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="502" y="436" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2560.1400@0.0.2560.1400" timestamp="1597358471368" />
+    <state x="347" y="436" width="585" height="534" key="find.popup" timestamp="1597492087260">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="347" y="436" width="585" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597492087260" />
     <state x="1568" y="332" width="672" height="677" key="run.anything.popup" timestamp="1597353731629">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1568" y="332" width="672" height="677" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597353731629" />
-    <state x="1575" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1597353735408">
+    <state x="1575" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1597492078338">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1575" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597353735408" />
+    <state x="1575" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597492078338" />
   </component>
 </project>
