@@ -2,6 +2,11 @@
 
 return [
 
+    'main_user_name' => env('MAIN_USER_NAME'),
+    'main_user_password' => env('MAIN_USER_PASSWORD'),
+    'main_user_email' => env('MAIN_USER_EMAIL'),
+
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
