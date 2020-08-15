@@ -18,19 +18,15 @@ abstract class BaseTestCase extends TestCase
         return $user;
     }
 
-    public function
-    postApiWithAuth($uri, array $data = [], array $headers = [])
+    public function postApi($uri, array $data = [], array $headers = [])
     {
-        $user = $this->authenticatedUser();
-        $token = $user->createToken('test')->accessToken;
-        $headers['Authorization'] = 'Bearer ' . $token;
         $headers['Accept'] = 'application/json';
         return $this->post($uri, $data, $headers);
     }
 
-    public function postApiWithoutAuth($uri, array $data = [], array $headers = [])
+    public function putApi($uri, array $data = [], array $headers = [])
     {
-        $headers['Accepts'] = 'application/json';
-        return $this->post($uri, $data, $headers);
+        $headers['Accept'] = 'application/json';
+        return $this->put($uri, $data, $headers);
     }
 }

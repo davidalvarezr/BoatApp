@@ -51,9 +51,9 @@ class BoatController extends Controller
     }
 
     // TODO
-    public function update()
+    public function update(Request $r, $id)
     {
-
+        return response()->json('todo');
     }
 
     // TODO
