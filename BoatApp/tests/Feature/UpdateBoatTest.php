@@ -53,4 +53,18 @@ class UpdateBoatTest extends BaseTestCase
         $response->assertStatus(422);
     }
 
+    public function testUpdateNonExistent()
+    {
+        $nonExistentId = $this->nonExistentId(Boat::class);
+
+        $boatUpdate = factory(Boat::class)->make();
+
+        $response = $this
+            ->actingAs($this->authenticatedUser(), 'api')
+            ->putApi(route('api-boat-update', $nonExistentId), $boatUpdate->toArray());
+        $response->dump();
+
+        $response->assertStatus(404);
+    }
+
 }

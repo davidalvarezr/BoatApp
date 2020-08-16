@@ -18,4 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->group(function () {
     Route::post('/boat', 'BoatController@store')->name('api-boat-store');
     Route::put('/boat/{id}', 'BoatController@update')->name('api-boat-update');
+    Route::delete('/boat/{id}', 'BoatController@delete')->name('api-boat-delete');
 });

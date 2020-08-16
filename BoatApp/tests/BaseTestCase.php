@@ -18,15 +18,29 @@ abstract class BaseTestCase extends TestCase
         return $user;
     }
 
-    public function postApi($uri, array $data = [], array $headers = [])
+    // PRE: less than $maxId number of entries in table in table
+    protected function nonExistentId($model, $maxId = 10000) {
+        do {
+            $randId = rand(1, $maxId);
+        } while ($model::find($randId) !== null);
+        return $randId;
+    }
+
+    protected function postApi($uri, array $data = [], array $headers = [])
     {
         $headers['Accept'] = 'application/json';
         return $this->post($uri, $data, $headers);
     }
 
-    public function putApi($uri, array $data = [], array $headers = [])
+    protected function putApi($uri, array $data = [], array $headers = [])
     {
         $headers['Accept'] = 'application/json';
         return $this->put($uri, $data, $headers);
+    }
+
+    protected function deleteApi($uri, array $data = [], array $headers = [])
+    {
+        $headers['Accept'] = 'application/json';
+        return $this->delete($uri, $data, $headers);
     }
 }

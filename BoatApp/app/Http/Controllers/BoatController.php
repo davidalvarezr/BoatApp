@@ -3,9 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreBoatRequest;
+use App\Http\Requests\UpdateBoatRequest;
 use App\Models\Boat;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Translation\Exception\NotFoundResourceException;
 
 class BoatController extends Controller
 {
@@ -42,7 +46,6 @@ class BoatController extends Controller
 
     // API -------------------------------------------------------------------------------------------------------------
 
-    // TODO
     public function store(StoreBoatRequest $r)
     {
         $data = $r->validated();
@@ -50,15 +53,25 @@ class BoatController extends Controller
         return response()->json(['boat' => $boat]);
     }
 
-    // TODO
-    public function update(Request $r, $id)
+    public function update(UpdateBoatRequest $r, $id)
     {
-        return response()->json('todo');
+        $boat = Boat::find($id);
+        if ($boat === null) throw new ModelNotFoundException();
+        $boatUpdate = $r->validated();
+
+        $boat->fill($boatUpdate)->save();
+        return response()->json([
+            'boat' => $boat->fresh(),
+        ]);
     }
 
-    // TODO
-    public function delete()
+    public function delete($id)
     {
-
+        $boat = Boat::find($id);
+        if ($boat === null) throw new ModelNotFoundException();
+        $boat->delete();
+        return response()->json([
+            'boat' => $boat,
+        ]);
     }
 }
