@@ -8,6 +8,7 @@ import PersonalAccessTokens from "./components/passport/PersonalAccessTokens";
 import TokenSetter from "./components/auth/TokenSetter";
 import Boat from "./components/boat/Boat";
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import BoatList from "./components/boat/BoatList";
 
 
 require('./bootstrap');
@@ -33,6 +34,7 @@ Vue.use(IconsPlugin)
 Vue.component('personnal-access-token', PersonalAccessTokens);
 Vue.component('token-setter', TokenSetter);
 Vue.component('boat', Boat);
+Vue.component('boat-list', BoatList)
 
 
 /**

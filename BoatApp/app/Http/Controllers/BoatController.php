@@ -21,7 +21,7 @@ class BoatController extends Controller
     {
         return view('modules.boat.list', [
             'token' => Session::get('token'),
-            'boats' => Boat::all(),
+            'boats' => Boat::all(['id', 'name', 'description']),
         ]);
     }
 
