@@ -20,6 +20,7 @@ class CreateBoatsTable extends Migration
             $table->string('name', 127);
             $table->string('description', 511);
             $table->unique(['name', 'description']);
+            $table->foreignId('user_id')->constrained();
         });
     }
 
@@ -31,6 +32,7 @@ class CreateBoatsTable extends Migration
     public function down()
     {
         Schema::table('boats', function (Blueprint $table) {
+            $table->dropForeign(['user_id']);
             $table->dropUnique(['name', 'description']);
         });
         Schema::dropIfExists('boats');

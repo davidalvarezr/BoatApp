@@ -9,7 +9,7 @@ class Boat extends Model
     protected $table = 'boats';
 
     protected $fillable = [
-        'name', 'description'
+        'name', 'description', 'user_id'
     ];
 
     public static $storeRules = [
@@ -22,4 +22,8 @@ class Boat extends Model
         'description' => ['string', 'max:511'],
     ];
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
