@@ -6,6 +6,9 @@
 
 import PersonalAccessTokens from "./components/passport/PersonalAccessTokens";
 import TokenSetter from "./components/auth/TokenSetter";
+import Boat from "./components/boat/Boat";
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
 
 require('./bootstrap');
 
@@ -22,8 +25,14 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
+// Install BootstrapVue
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin)
+
 Vue.component('personnal-access-token', PersonalAccessTokens);
 Vue.component('token-setter', TokenSetter);
+Vue.component('boat', Boat);
 
 
 /**

@@ -13,13 +13,13 @@ class Boat extends Model
     ];
 
     public static $storeRules = [
-        'name' => ['required', 'string', 'max:127'],
-        'description' => ['required', 'string', 'max:511'],
+        'name' => ['required', 'string', 'min:1', 'max:127'],
+        'description' => ['required', 'string', 'min:1', 'max:511'],
     ];
 
     public static $updateRules = [
-        'name' => ['string', 'max:127'],
-        'description' => ['string', 'max:511'],
+        'name' => ['string', 'min:1', 'max:127'],
+        'description' => ['string', 'min:1', 'max:511'],
     ];
 
     public function user()

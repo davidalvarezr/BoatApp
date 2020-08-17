@@ -19,7 +19,10 @@ class BoatController extends Controller
 
     public function list()
     {
-        return view('modules.boat.list', ['token' => Session::get('token')]);
+        return view('modules.boat.list', [
+            'token' => Session::get('token'),
+            'boats' => Boat::all(),
+        ]);
     }
 
     public function create()
@@ -42,6 +45,7 @@ class BoatController extends Controller
         return view('modules.boat.boat')->with([
             'mode' => $mode,
             'id' => $id,
+            'boat' => Boat::find($id)
         ]);
     }
 
